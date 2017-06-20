@@ -1,0 +1,123 @@
+SMALL BASICS
+
+Assignment #1
+
+TextWindow.Write("Choose First_Number:")
+First_Number = TextWindow.ReadNumber()
+TextWindow.Write("Choose Second_Number:")
+Second_Number = TextWindow.ReadNumber()
+If (First_Number < Second_Number)Then
+  TextWindow.WriteLine("The number " + First_Number + " is less than " + Second_Number + ".")
+Else
+  TextWindow.WriteLine("The number " + Second_Number + " is less than " + First_Number + ".")
+EndIf
+
+
+Assignment # 2
+
+If(Clock.Time <= 0000 + Clock.Time >= 1200)Then
+  TextWindow.WriteLine("Based on the current time in Portland, the bank in New York is open.")
+ElseIf(Clock.Time > 0000 + Clock.Time < 1200)Then
+  TextWindow.WriteLine("Based on the current time in Portland, the bank in New York is closed.")
+EndIf
+If(Clock.Time >= 0100 + Clock.Time <= 1300)Then
+  TextWindow.WriteLine("Based on the current time in Portland, the bank in London is open.")
+ElseIf(Clock.Time > 1300 + Clock.Time < 0100)Then 
+  TextWindow.WriteLine("Based on the current time in Portland, the bank in London is closed.")
+EndIf
+
+ If(Clock.Time <= 0000 + Clock.Time >= 1200)Then
+  TextWindow.WriteLine("The Bank in New York is open.")
+ElseIf(Clock.Time > 0000 + Clock.Time < 1200)Then
+  TextWindow.WriteLine("The Bank in New York is closed.")
+EndIf
+If(Clock.Time >= 0100 + Clock.Time <= 1300)Then
+  TextWindow.WriteLine("The Bank in London is open.")
+ElseIf(Clock.Time > 1300 + Clock.Time < 0100)Then 
+  TextWindow.WriteLine("The Bank in London is closed.")
+EndIf
+
+Assignment # 3
+
+File.CopyFile("C:\Users\Student\Desktop\New\Assignment # 3.txt","C:\Users\Student\Desktop\Empty")
+
+
+Assignment #4
+
+If(Clock.Time < 0100)Then
+  ElseIf(Clock.Time > 1300)Then 
+File.CopyFile("C:\Users\Student\Desktop\New\Assignment # 3.txt","C:\Users\Student\Desktop\Empty")
+EndIf
+
+Assignment # 5
+
+Controls.GetButtonCaption("Button") 
+Controls.AddButton("Button", 100, 100)
+GraphicsWindow.DrawText(20,50,"Click on the Button.")
+GraphicsWindow.DrawText(20,70,"If the bank in London is closed, then your file will be transferred to your folder.") 
+ButtonClicked()
+Sub ButtonClicked 
+  If(Clock.Time > 0100)Then
+  ElseIf(Clock.Time < 1300)Then 
+File.CopyFile("C:\Users\Student\Desktop\New\Assignment # 3.txt","C:\Users\Student\Desktop\Empty")
+EndIf 
+EndSub
+
+
+
+Controls.GetButtonCaption("Button") 
+Controls.AddButton("Button", 100, 100)
+GraphicsWindow.DrawText(20,50,"Click on the Button.")
+GraphicsWindow.DrawText(20,70,"If the bank in London is closed, then your file will be transferred to your folder.") 
+ButtonClicked()
+Sub ButtonClicked 
+  If(Clock.Time > 0100)Then
+  ElseIf(Clock.Time < 1300)Then 
+File.CopyFile("C:\Users\Student\Desktop\New\Assignment # 3.txt","C:\Users\Student\Desktop\Empty")
+EndIf 
+EndSub
+
+
+
+Controls.GetButtonCaption("Click Mouse") 
+Controls.AddButton("Click Mouse", 100, 100)
+GraphicsWindow.DrawText(20,50,"Click on the mouse.If the bank in London is closed, then your file will be transferred to your folder.")
+ButtonClicked()
+Sub ButtonClicked 
+  If(Clock.Time > 0100)Then
+  ElseIf(Clock.Time < 1300)Then 
+File.CopyFile("C:\Users\Student\Desktop\New\Assignment # 3.txt","C:\Users\Student\Desktop\Empty")
+EndIf 
+EndSub
+
+
+
+If(Clock.Time < 0100)Then
+  ElseIf(Clock.Time > 1300)Then 
+File.CopyFile("C:\Users\Student\Desktop\New/.txt","C:\Users\Student\Desktop\Empty")
+EndIf
+GraphicsWindow.MouseDown = Click
+GraphicsWindow.ShowMessage("Left click on the mouse. If the bank in London is open, then your file will be sent to the empty folder.","Notice")
+Click()
+Sub Click
+EndSub  
+
+GraphicsWindow.BackgroundColor = "Magenta"
+GraphicsWindow.PenColor = "Black"
+GraphicsWindow.Width = 600
+GraphicsWindow.Height = 600
+GraphicsWindow.Title = "File Transfer" 
+GraphicsWindow.MouseDown = Click
+GraphicsWindow.ShowMessage("Left click on the mouse.")
+GraphicsWindow.ShowMessage("If the bank in London is open, then your file will be sent to the empty folder.","NOTICE")
+Click()
+Sub Click
+ If(Clock.Time < 0100)Then
+  ElseIf(Clock.Time > 1300)Then 
+File.CopyFile("C:\Users\Student\Desktop\New\Assignment # 3.txt","C:\Users\Student\Desktop\Empty")
+EndIf
+EndSub 
+
+
+
+
